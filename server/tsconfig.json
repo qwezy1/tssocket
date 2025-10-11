@@ -1,0 +1,12 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+  "module": "esnext",
+  "target": "esnext",
+  "verbatimModuleSyntax": true,
+  "esModuleInterop": true,
+  "moduleResolution": "bundler",
+  "skipLibCheck": true
+}
+
+}

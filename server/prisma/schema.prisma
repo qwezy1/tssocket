@@ -1,0 +1,15 @@
+datasource db {
+  provider = "sqlite" // для простоты
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  socketId  String   @unique
+  room      String?
+  joinedAt  DateTime @default(now())
+}
